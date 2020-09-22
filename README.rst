@@ -56,11 +56,11 @@ Related collections (O2M, M2M) are omitted::
 
 Same as .all(), but omitting listed fields::
 
-    articles = Article.objects.defer('name')
+    articles = Article.objects.defer('title')
 
 Same as .all(), but only listed fields, even if they are in PRIVY_FIELDS::
 
-    articles = Article.objects.only('name')
+    articles = Article.objects.only('title')
 
 Add full-fledged related objects (O2O, M2O)::
 
