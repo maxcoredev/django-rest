@@ -19,7 +19,7 @@ Quick start
         'rest',
     ]
 
-3. Add "rest" middleware::
+3. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``::
 
     MIDDLEWARE = [
         ...
