@@ -51,16 +51,21 @@ Examples
 Returns all fields, except PRIVY_FIELDS
 Related objects (O2O, M2O) are just pks (default)
 Related collections (O2M, M2M) are omitted::
+
     articles = Article.objects.all()
 
 Same as .all(), but omitting listed fields::
+
     articles = Article.objects.defer('name')
 
 Same as .all(), but only listed fields, even if they are in PRIVY_FIELDS::
+
     articles = Article.objects.only('name')
 
 Add full-fledged related objects (O2O, M2O)::
+
     articles = Article.objects.all().select_related('category')
 
 Add related collections (O2M, M2M) (full-fledged)::
+
     articles = Article.objects.all().prefetch_related('tags')
