@@ -1,9 +1,7 @@
 Django-rest
 =====
 
-Simple response serializer, automatically serizlizing all fields and relations, except listed in model's
-
-``PRIVY_FIELDS = []``
+Simple response serializer, automatically serizlizing all specified relations and fields, except listed in model's ``PRIVY_FIELDS = []``
 
 Quick start
 -----------
