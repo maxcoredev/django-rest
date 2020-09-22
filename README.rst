@@ -31,11 +31,11 @@ Quick start
         views_count = models.IntegerField()
         PRIVY_FIELDS = ['views_count']
 
-4.
+4. Use it in views
 
-from rest.response import Response
-from .models import Article
+    from rest.response import Response
+    from .models import Article
 
-def article_list(request):
-    articles = Article.objects.all()
-    return Response(articles)
+    def article_list(request):
+        articles = Article.objects.all()
+        return Response(articles)
