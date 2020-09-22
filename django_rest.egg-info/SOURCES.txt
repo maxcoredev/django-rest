@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_rest.egg-info/PKG-INFO
+django_rest.egg-info/SOURCES.txt
+django_rest.egg-info/dependency_links.txt
+django_rest.egg-info/top_level.txt
+rest/__init__.py
+rest/helpers.py
+rest/managers.py
+rest/middleware.py
+rest/models.py
+rest/response.py
+rest/serialize.py
