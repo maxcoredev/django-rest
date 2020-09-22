@@ -1,9 +1,7 @@
-Rest
+Django-rest
 =====
 
 Simple response serializer.
-
-Detailed documentation is in the "docs" directory.
 
 Quick start
 -----------
@@ -21,7 +19,14 @@ Quick start
         'rest',
     ]
 
-3. Define models::
+3. Add "rest" middleware::
+
+    MIDDLEWARE = [
+        ...
+        'rest.middleware.DebugMiddleware',
+    ]
+
+4. Define models::
 
     from rest.models import RestModel, models
 
@@ -31,7 +36,7 @@ Quick start
         views_count = models.IntegerField()
         PRIVY_FIELDS = ['views_count']
 
-4. Use it in views::
+5. Use it in views::
 
     from rest.response import Response
     from .models import Article
