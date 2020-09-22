@@ -79,7 +79,7 @@ Same as .all(), but omitting listed fields:
 
 -----------
 
-Same as .all(), but only listed fields, even if they are in PRIVY_FIELDS:
+Same as .all(), but only listed fields, even if they are in ``PRIVY_FIELDS``:
 
 .. code-block:: python
 
