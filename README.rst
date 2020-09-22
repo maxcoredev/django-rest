@@ -42,6 +42,7 @@ Quick start
         title = models.CharField(max_length=255)
         text = models.TextField()
         views_count = models.IntegerField()
+        
         PRIVY_FIELDS = ['views_count']
 
 5. Use it in views:
