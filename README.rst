@@ -8,7 +8,7 @@ Detailed documentation is in the "docs" directory.
 Quick start
 -----------
 
-1. Installation
+1. Installation::
 
     git clone https://github.com/maxcoredev/django-rest.git
     cd django-rest
