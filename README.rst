@@ -21,7 +21,7 @@ Quick start
         'rest',
     ]
 
-3. Define models
+3. Define models::
 
     from rest.models import RestModel, models
 
@@ -31,7 +31,7 @@ Quick start
         views_count = models.IntegerField()
         PRIVY_FIELDS = ['views_count']
 
-4. Use it in views
+4. Use it in views::
 
     from rest.response import Response
     from .models import Article
