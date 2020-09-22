@@ -42,7 +42,7 @@ Quick start
         title = models.CharField(max_length=255)
         text = models.TextField()
         views_count = models.IntegerField()
-        
+
         PRIVY_FIELDS = ['views_count']
 
 5. Use it in views:
@@ -59,8 +59,10 @@ Quick start
 Examples
 -----------
 
-Returns all fields, except PRIVY_FIELDS
+Return all fields, except PRIVY_FIELDS
+
 Related objects (O2O, M2O) are just pks (default)
+
 Related collections (O2M, M2M) are omitted:
 
 .. code-block:: python
