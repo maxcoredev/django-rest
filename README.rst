@@ -77,17 +77,23 @@ Same as .all(), but omitting listed fields:
 
     articles = Article.objects.defer('title')
 
+-----------
+
 Same as .all(), but only listed fields, even if they are in PRIVY_FIELDS:
 
 .. code-block:: python
 
     articles = Article.objects.only('title')
 
+-----------
+
 Add full-fledged related objects (O2O, M2O):
 
 .. code-block:: python
 
     articles = Article.objects.all().select_related('category')
+
+-----------
 
 Add related collections (O2M, M2M) (full-fledged):
 
