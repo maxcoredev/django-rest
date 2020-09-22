@@ -69,7 +69,7 @@ Related collections (O2M, M2M) are omitted:
 
     articles = Article.objects.all()
 
----
+-----------
 
 Same as .all(), but omitting listed fields:
 
