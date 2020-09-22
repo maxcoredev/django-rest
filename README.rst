@@ -8,18 +8,18 @@ Quick start
 
 1. Installation::
 
-    git clone https://github.com/maxcoredev/django-rest.git
-    cd django-rest
-    pip install dist/django-rest-0.1.tar.gz
+    $ git clone https://github.com/maxcoredev/django-rest.git
+    $ cd django-rest
+    $ pip install dist/django-rest-0.1.tar.gz
 
-2. Add "rest" to your INSTALLED_APPS setting like this::
+2. Add "rest" to your INSTALLED_APPS setting like this:: python
 
     INSTALLED_APPS = [
         ...
         'rest',
     ]
 
-3. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``::
+3. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``:: python
 
     MIDDLEWARE = [
         ...
