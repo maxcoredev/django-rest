@@ -12,14 +12,14 @@ Quick start
     $ cd django-rest
     $ pip install dist/django-rest-0.1.tar.gz
 
-2. Add "rest" to your INSTALLED_APPS setting like this:: python
+2. Add "rest" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
         'rest',
     ]
 
-3. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``:: python
+3. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``::
 
     MIDDLEWARE = [
         ...
