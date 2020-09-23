@@ -14,25 +14,7 @@ Quick start
     $ cd django-rest
     $ pip install dist/django-rest-0.1.tar.gz
 
-2. Add "rest" to your INSTALLED_APPS setting like this:
-
-.. code-block:: python
-
-    INSTALLED_APPS = [
-        ...
-        'rest',
-    ]
-
-3. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``:
-
-.. code-block:: python
-
-    MIDDLEWARE = [
-        ...
-        'rest.middleware.DebugMiddleware',
-    ]
-
-4. Define models:
+2. Define models:
 
 .. code-block:: python
 
@@ -46,7 +28,7 @@ Quick start
         # Feilds that must not be serialized if not forced with objects.only() and object.force()
         PRIVY_FIELDS = ['views_count']
 
-5. Use it in views:
+3. Use it in views:
 
 .. code-block:: python
 
@@ -56,6 +38,16 @@ Quick start
     def article_list(request):
         articles = Article.objects.all()
         return Response(articles)
+
+
+4. To get pretty view in browser and make it compatible with Django-debug-toolbar add ``DebugMiddleware``:
+
+.. code-block:: python
+
+    MIDDLEWARE = [
+        ...
+        'rest.middleware.DebugMiddleware',
+    ]
 
 Examples
 -----------
