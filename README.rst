@@ -43,6 +43,7 @@ Quick start
         text = models.TextField()
         views_count = models.IntegerField()
 
+        # Feilds that must not be serialized if not forced with objects.only() and object.force()
         PRIVY_FIELDS = ['views_count']
 
 5. Use it in views:
@@ -71,7 +72,7 @@ Related collections (O2M, M2M) are omitted:
 
 -----------
 
-Same as .all(), but omitting listed fields:
+Omitting fields:
 
 .. code-block:: python
 
@@ -79,11 +80,19 @@ Same as .all(), but omitting listed fields:
 
 -----------
 
-Same as .all(), but only listed fields, even if they are in ``PRIVY_FIELDS``:
+Only listed fields, even if they are in ``PRIVY_FIELDS``:
 
 .. code-block:: python
 
     articles = Article.objects.only('title')
+
+-----------
+
+Force add ``PRIVY_FIELDS`` to be serialized:
+
+.. code-block:: python
+
+    articles = Article.objects.force('views_count')
 
 -----------
 
