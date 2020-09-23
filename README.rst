@@ -80,7 +80,7 @@ Only listed fields, even if they are in ``PRIVY_FIELDS``:
 
 -----------
 
-Force add ``PRIVY_FIELDS`` to be serialized:
+The only non-standard method - force add ``PRIVY_FIELDS`` to be serialized:
 
 .. code-block:: python
 
