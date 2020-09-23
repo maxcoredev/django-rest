@@ -25,7 +25,7 @@ Quick start
         text = models.TextField()
         views_count = models.IntegerField()
 
-        # Feilds that must not be serialized if not forced with objects.only() and object.force()
+        # Feilds that must not be serialized if not forced with objects.only() and objects.force()
         PRIVY_FIELDS = ['views_count']
 
 3. Use it in views:
