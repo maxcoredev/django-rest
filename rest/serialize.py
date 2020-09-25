@@ -53,7 +53,7 @@ def serialize_object(obj, parent=None, forced=None):
 def serialize(content, parent=None, forced=None):
 
     # If iterable (including RestQuerySet) (but not str)
-    if isinstance(content, Iterable) and not isinstance(content, (str, bytes)):
+    if isinstance(content, Iterable) and not isinstance(content, (str, bytes, dict)):
         array = []
         for obj in content:
             forced = merge_dicts(forced, content._forced if isinstance(content, RestQuerySet) else None)
