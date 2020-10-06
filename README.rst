@@ -1,4 +1,4 @@
-Django-rest
+Django-serialize
 =====
 
 Simple response serializer, automatically serizlizing all specified relations and fields, except listed in model's ``PRIVY_FIELDS = []``

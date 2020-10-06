@@ -12,5 +12,4 @@ rest/helpers.py
 rest/managers.py
 rest/middleware.py
 rest/models.py
-rest/response.py
-rest/serialize.py
+rest/serializer.py

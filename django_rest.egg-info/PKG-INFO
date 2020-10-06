@@ -6,7 +6,7 @@ Home-page: https://maxcoredev.github.io/
 Author: Max Core
 Author-email: maxcoredev@gmail.com
 License: BSD-3-Clause
-Description: Django-rest
+Description: Django-serialize
         =====
         
         Simple response serializer, automatically serizlizing all specified relations and fields, except listed in model's ``PRIVY_FIELDS = []``

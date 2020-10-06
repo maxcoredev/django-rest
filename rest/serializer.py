@@ -1,3 +1,7 @@
+import json
+
+from django.core.serializers.json import DjangoJSONEncoder
+
 from collections import Iterable
 
 from rest.models import RestModel
